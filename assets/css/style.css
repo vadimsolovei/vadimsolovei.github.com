@@ -3558,12 +3558,25 @@ iframe {
 }
 @media only screen and (max-width: 991px) {
   .header-area.header-default .header-logo-area {
-    max-width: 140px;
+    max-width: 160px;
   }
 }
-@media only screen and (max-width: 767px) {
-  .header-area.header-default .header-logo-area {
-    max-width: 110px;
+/*@media only screen and (max-width: 767px) {*/
+/*  .header-area.header-default .header-logo-area {*/
+/*    max-width: 110px;*/
+/*  }*/
+/*}*/
+@media only screen and (min-width: 600px) {
+  .header-logo-area {
+    margin-left: -17%;
+  }
+}
+.header-text {
+  font-size: 16px;
+}
+@media only screen and (max-width: 599px) {
+  .header-text {
+    display: none;
   }
 }
 .header-area.header-default .header-navigation-area .main-menu > li {
