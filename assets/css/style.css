@@ -3566,15 +3566,17 @@ iframe {
 /*    max-width: 110px;*/
 /*  }*/
 /*}*/
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 630px) {
   .header-logo-area {
-    margin-left: -17%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 .header-text {
   font-size: 16px;
 }
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 629px) {
   .header-text {
     display: none;
   }
@@ -3702,7 +3704,7 @@ iframe {
 
 .header-logo-area {
   max-width: 148px;
-  position: relative;
+  /*position: relative;*/
   top: 1px;
 }
 .header-logo-area .logo-light {
