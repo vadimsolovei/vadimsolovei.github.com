@@ -6538,13 +6538,13 @@ iframe {
   }
 }
 .post-items-style1 .post-item .content .title {
-  color: #000;
+  color: #fff;
   font-family: "DM Sans", sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0;
-  margin-bottom: 22px;
+  margin-bottom: 40px;
 }
 @media only screen and (max-width: 575px) {
   .post-items-style1 .post-item .content .title {
@@ -6555,7 +6555,7 @@ iframe {
 }
 .post-items-style1 .post-item .content .title a {
   border-bottom: 1px solid transparent;
-  color: #000;
+  color: #fff;
   position: relative;
 }
 .post-items-style1 .post-item .content .title a:hover {
