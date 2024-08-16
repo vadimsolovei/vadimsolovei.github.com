@@ -3566,7 +3566,7 @@ iframe {
 /*    max-width: 110px;*/
 /*  }*/
 /*}*/
-@media only screen and (min-width: 630px) {
+@media only screen and (min-width: 676px) {
   .header-logo-area {
     position: absolute;
     left: 50%;
@@ -3576,7 +3576,7 @@ iframe {
 .header-text {
   font-size: 16px;
 }
-@media only screen and (max-width: 629px) {
+@media only screen and (max-width: 675px) {
   .header-text {
     display: none;
   }
@@ -4292,7 +4292,7 @@ iframe {
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 35px;
+  padding: 0 0 15px 15px;
   transition: all 0.5s ease 0s;
   opacity: 0;
 }
@@ -4307,8 +4307,9 @@ iframe {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   margin-bottom: 15px;
+  color: #fff;
 }
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1600px) {
   .single-portfolio .content .title {
     font-size: 18px;
   }
@@ -6422,16 +6423,12 @@ iframe {
   }
 }
 
-.post-items-style1 .post-item {
-  margin-bottom: 51px;
-}
 @media only screen and (max-width: 575px) {
   .post-items-style1 .post-item {
     margin-bottom: 30px;
   }
 }
 .post-items-style1 .post-item .thumb {
-  margin-bottom: 20px;
   overflow: hidden;
   position: relative;
 }
@@ -6544,7 +6541,12 @@ iframe {
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0;
-  margin-bottom: 40px;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 1600px) {
+  .post-items-style1 .post-item .content .title {
+    font-size: 18px;
+  }
 }
 @media only screen and (max-width: 575px) {
   .post-items-style1 .post-item .content .title {
@@ -7904,5 +7906,16 @@ iframe {
 @media only screen and (max-width: 991px) {
   .site-wrapper-reveal {
     margin-bottom: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 453px) {
+  .header {
+    display: flex;
+    justify-content: center !important;
+  }
+
+  .header > div:nth-child(2) {
+    margin-bottom: 20px;
   }
 }
