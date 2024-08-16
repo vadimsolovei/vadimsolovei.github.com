@@ -6423,11 +6423,6 @@ iframe {
   }
 }
 
-@media only screen and (max-width: 575px) {
-  .post-items-style1 .post-item {
-    margin-bottom: 30px;
-  }
-}
 .post-items-style1 .post-item .thumb {
   overflow: hidden;
   position: relative;
