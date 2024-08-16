@@ -7909,7 +7909,7 @@ iframe {
   }
 }
 
-@media only screen and (max-width: 453px) {
+@media only screen and (max-width: 433px) {
   .header {
     display: flex;
     justify-content: center !important;
