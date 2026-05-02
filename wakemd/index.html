@@ -1,0 +1,1230 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Wake.md — Вода, экстрим и отличное настроение!</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Montserrat:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <main class="page">
+            <!-- Animated logo (top-left absolute) -->
+            <div class="logo-anim" aria-hidden="true">
+                <img src="assets/logo.webp" alt="Wake.md" />
+            </div>
+
+            <!-- HERO -->
+            <section class="hero">
+                <div
+                    class="hero__bg"
+                    style="background-image: url(&quot;assets/hero.png&quot;)"
+                ></div>
+                <div class="hero__shadow"></div>
+
+                <div class="hero__content">
+                    <div class="pill pill--ghost pill--icon">
+                        <span class="ico" aria-hidden="true">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path
+                                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"
+                                />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </span>
+                        <span class="pill__text"
+                            >Днестр,<br />Вадул луй Воды</span
+                        >
+                    </div>
+
+                    <h1 class="hero__title">
+                        Вода, экстрим<br />и
+                        <span class="emoji">☺</span> отличное<br />настроение!
+                    </h1>
+
+                    <p class="hero__lead">
+                        Яркие впечатления, драйв и незабываемые эмоции —
+                        вэйкбординг, вэйксёрфинг, водные лыжи и другие
+                        активности на воде.
+                    </p>
+
+                    <div class="hero__row">
+                        <div class="cta-group">
+                            <button class="btn btn--primary">
+                                <span class="ico" aria-hidden="true">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <rect
+                                            x="3"
+                                            y="5"
+                                            width="18"
+                                            height="16"
+                                            rx="2"
+                                        />
+                                        <line x1="3" y1="10" x2="21" y2="10" />
+                                        <line x1="8" y1="3" x2="8" y2="7" />
+                                        <line x1="16" y1="3" x2="16" y2="7" />
+                                    </svg>
+                                </span>
+                                Забронировать
+                            </button>
+
+                            <button class="btn btn--ghost">
+                                <span class="ico" aria-hidden="true">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.13 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"
+                                        />
+                                    </svg>
+                                </span>
+                                Позвонить
+                            </button>
+                        </div>
+
+                        <div class="social">
+                            <a
+                                class="ico-btn ico-btn--white"
+                                href="#"
+                                aria-label="Instagram"
+                            >
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <rect
+                                        x="2"
+                                        y="2"
+                                        width="20"
+                                        height="20"
+                                        rx="5"
+                                    />
+                                    <path
+                                        d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                                    />
+                                    <line
+                                        x1="17.5"
+                                        y1="6.5"
+                                        x2="17.51"
+                                        y2="6.5"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                class="ico-btn ico-btn--white"
+                                href="#"
+                                aria-label="Telegram"
+                            >
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.24 3.64 11.95c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                class="ico-btn ico-btn--white"
+                                href="#"
+                                aria-label="Facebook"
+                            >
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46H15.2c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.45 2.89h-2.34v6.99A10 10 0 0 0 22 12z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIDEO STRIP -->
+            <section class="video-strip">
+                <div
+                    class="video-strip__inner swiper video-carousel"
+                    aria-label="Wake.md media carousel"
+                >
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <figure class="video-tile video-tile--image">
+                                <img
+                                    src="assets/video1.jpg"
+                                    alt="Wakeboarding on the water"
+                                />
+                                <span
+                                    class="play-circle"
+                                    aria-hidden="true"
+                                ></span>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="video-tile video-tile--image">
+                                <img
+                                    src="assets/video2.jpg"
+                                    alt="Wake session near the boat"
+                                />
+                                <span
+                                    class="play-circle"
+                                    aria-hidden="true"
+                                ></span>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="video-tile video-tile--image">
+                                <img
+                                    src="assets/video3.jpg"
+                                    alt="Rider carving across the wake"
+                                />
+                                <span
+                                    class="play-circle"
+                                    aria-hidden="true"
+                                ></span>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="video-tile video-tile--image">
+                                <img
+                                    src="assets/video4.jpg"
+                                    alt="Watersport ride at speed"
+                                />
+                                <span
+                                    class="play-circle"
+                                    aria-hidden="true"
+                                ></span>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="video-tile video-tile--image">
+                                <img
+                                    src="assets/video5.jpg"
+                                    alt="Wakeboarding turn on open water"
+                                />
+                                <span
+                                    class="play-circle"
+                                    aria-hidden="true"
+                                ></span>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="video-tile video-tile--image">
+                                <img
+                                    src="assets/video6.jpg"
+                                    alt="Wake ride with spray"
+                                />
+                                <span
+                                    class="play-circle"
+                                    aria-hidden="true"
+                                ></span>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="video-tile video-tile--image">
+                                <img
+                                    src="assets/video1.jpg"
+                                    alt="Wakeboarding practice on the water"
+                                />
+                                <span
+                                    class="play-circle"
+                                    aria-hidden="true"
+                                ></span>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="video-tile video-tile--image">
+                                <img
+                                    src="assets/video3.jpg"
+                                    alt="Wake rider crossing the boat wake"
+                                />
+                                <span
+                                    class="play-circle"
+                                    aria-hidden="true"
+                                ></span>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="video-tile video-tile--image">
+                                <img
+                                    src="assets/video5.jpg"
+                                    alt="Wakeboarding session with water spray"
+                                />
+                                <span
+                                    class="play-circle"
+                                    aria-hidden="true"
+                                ></span>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="video-tile video-tile--image">
+                                <img
+                                    src="assets/video2.jpg"
+                                    alt="Wake session test slide"
+                                />
+                                <span
+                                    class="play-circle"
+                                    aria-hidden="true"
+                                ></span>
+                            </figure>
+                        </div>
+
+                        <!-- Local video slide example:
+          <div class="swiper-slide">
+            <figure class="video-tile video-tile--video">
+              <video controls playsinline preload="metadata" poster="assets/video1.jpg">
+                <source src="assets/wake-session.mp4" type="video/mp4" />
+              </video>
+            </figure>
+          </div>
+          -->
+
+                        <!-- Embedded video slide example:
+          <div class="swiper-slide">
+            <figure class="video-tile video-tile--embed">
+              <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Wake.md video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </figure>
+          </div>
+          -->
+                    </div>
+
+                    <button
+                        class="video-carousel__nav video-carousel__nav--prev"
+                        type="button"
+                        aria-label="Previous media"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <button
+                        class="video-carousel__nav video-carousel__nav--next"
+                        type="button"
+                        aria-label="Next media"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M9 6l6 6-6 6" />
+                        </svg>
+                    </button>
+                    <div
+                        class="video-carousel__pagination swiper-pagination"
+                    ></div>
+                </div>
+            </section>
+
+            <!-- FAMILY -->
+            <section class="section section--white">
+                <header class="section__head">
+                    <h2 class="section__title">
+                        Для всей <span class="emoji">👨‍👩‍👧‍👦</span> семьи
+                    </h2>
+                    <p class="section__lead">
+                        Яркие впечатления, драйв и незабываемые эмоции —
+                        вэйкбординг, вэйксёрфинг, водные лыжи и другие
+                        активности на воде.
+                    </p>
+                </header>
+
+                <ul class="activities">
+                    <li class="activity">
+                        <div class="activity__avatar">
+                            <img src="assets/act-wakeboard.jpg" alt="" />
+                        </div>
+                        <span class="activity__name">Wakeboard</span>
+                        <span class="activity__rating"
+                            ><span class="emoji">😍</span>3<span
+                                class="rating__sub"
+                                >/10</span
+                            ></span
+                        >
+                    </li>
+                    <li class="activity">
+                        <div class="activity__avatar">
+                            <img src="assets/act-skate.jpg" alt="" />
+                        </div>
+                        <span class="activity__name">Skate</span>
+                        <span class="activity__rating"
+                            ><span class="emoji">🤪</span>5<span
+                                class="rating__sub"
+                                >/10</span
+                            ></span
+                        >
+                    </li>
+                    <li class="activity">
+                        <div class="activity__avatar">
+                            <img src="assets/act-kneeboard.jpg" alt="" />
+                        </div>
+                        <span class="activity__name">Kneeboard</span>
+                        <span class="activity__rating"
+                            ><span class="emoji">😀</span>1<span
+                                class="rating__sub"
+                                >/10</span
+                            ></span
+                        >
+                    </li>
+                    <li class="activity">
+                        <div class="activity__avatar">
+                            <img src="assets/act-waterski.jpg" alt="" />
+                        </div>
+                        <span class="activity__name">Water-Ski</span>
+                        <span class="activity__rating"
+                            ><span class="emoji">😎</span>6<span
+                                class="rating__sub"
+                                >/10</span
+                            ></span
+                        >
+                    </li>
+                    <li class="activity">
+                        <div class="activity__avatar activity__avatar--circle">
+                            <img src="assets/act-foil.jpg" alt="" />
+                        </div>
+                        <span class="activity__name">Foil board</span>
+                        <span class="activity__rating"
+                            ><span class="emoji">🙃</span>8<span
+                                class="rating__sub"
+                                >/10</span
+                            ></span
+                        >
+                    </li>
+                    <li class="activity activity--free">
+                        <div class="activity__avatar">
+                            <img src="assets/act-barefoot.jpg" alt="" />
+                        </div>
+                        <span class="activity__name"
+                            >Barefoot<br /><small>Бесплатно!</small></span
+                        >
+                        <span class="activity__rating"
+                            ><span class="emoji">🫣</span>10<span
+                                class="rating__sub"
+                                >/10</span
+                            ></span
+                        >
+                        <span class="activity__star">FREE</span>
+                    </li>
+                    <li class="activity">
+                        <div class="activity__avatar activity__avatar--circle">
+                            <img src="assets/act-wakesurf.jpg" alt="" />
+                        </div>
+                        <span class="activity__name"
+                            >Wakesurf<br /><small>Тирасполь</small></span
+                        >
+                        <span class="activity__rating"
+                            ><span class="emoji">🤩</span>4<span
+                                class="rating__sub"
+                                >/10</span
+                            ></span
+                        >
+                    </li>
+                </ul>
+            </section>
+
+            <!-- BIG VIDEO -->
+            <section class="big-video" aria-label="Wake.md feature video">
+                <video
+                    class="big-video__media"
+                    controls
+                    playsinline
+                    preload="metadata"
+                    poster="assets/video-large.jpg"
+                >
+                    <!-- Add the final video file here, for example:
+        <source src="assets/wake-session.mp4" type="video/mp4" />
+        -->
+                </video>
+                <button class="play-big" type="button" aria-label="Play video">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <polygon points="6,4 20,12 6,20" />
+                    </svg>
+                </button>
+            </section>
+
+            <!-- TEACH (8 step cards) -->
+            <section class="section section--teach">
+                <header class="section__head">
+                    <h2 class="section__title">
+                        Всему <span class="emoji">📚</span> научим!
+                    </h2>
+                    <p class="section__lead">
+                        Яркие впечатления, драйв и незабываемые эмоции —
+                        вэйкбординг, вэйксёрфинг, водные лыжи и другие
+                        активности на воде.
+                    </p>
+                </header>
+
+                <div
+                    class="steps swiper"
+                    aria-label="Wake.md learning steps carousel"
+                >
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="step-card__num">1</div>
+                            <article class="step-card">
+                                <div
+                                    class="step-card__img"
+                                    style="
+                                        background-image: url(&quot;assets/step1.jpg&quot;);
+                                    "
+                                ></div>
+                                <h3 class="step-card__title">Расслабьтесь!</h3>
+                                <p class="step-card__desc">
+                                    Лежим на воде, прямые руки, расслабленное
+                                    тело.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="step-card__num">2</div>
+                            <article class="step-card">
+                                <div
+                                    class="step-card__img"
+                                    style="
+                                        background-image: url(&quot;assets/step2.jpg&quot;);
+                                    "
+                                ></div>
+                                <h3 class="step-card__title">Не упираемся</h3>
+                                <p class="step-card__desc">
+                                    Не сопротивляемся тяге, попа прижимается к
+                                    доске.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="step-card__num">3</div>
+                            <article class="step-card">
+                                <div
+                                    class="step-card__img"
+                                    style="
+                                        background-image: url(&quot;assets/step3.jpg&quot;);
+                                    "
+                                ></div>
+                                <h3 class="step-card__title">
+                                    Подаёмся вперед
+                                </h3>
+                                <p class="step-card__desc">
+                                    Округляем спину и тянемся вперед, за ручкой.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="step-card__num">4</div>
+                            <article class="step-card">
+                                <div
+                                    class="step-card__img"
+                                    style="
+                                        background-image: url(&quot;assets/step4.jpg&quot;);
+                                    "
+                                ></div>
+                                <h3 class="step-card__title">Держим спину</h3>
+                                <p class="step-card__desc">
+                                    Немного напрягая спину держим баланс в
+                                    вертикальном положении.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="step-card__num">5</div>
+                            <article class="step-card">
+                                <div
+                                    class="step-card__img"
+                                    style="
+                                        background-image: url(&quot;assets/step5.jpg&quot;);
+                                    "
+                                ></div>
+                                <h3 class="step-card__title">
+                                    Еще держим баланс
+                                </h3>
+                                <p class="step-card__desc">
+                                    Подъемная сила сама поднимет доску на
+                                    поверхность.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="step-card__num">6</div>
+                            <article class="step-card">
+                                <div
+                                    class="step-card__img"
+                                    style="
+                                        background-image: url(&quot;assets/step6.jpg&quot;);
+                                    "
+                                ></div>
+                                <h3 class="step-card__title">Едем боком</h3>
+                                <p class="step-card__desc">
+                                    Отводим ручку в сторону ведущей ноги.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="step-card__num">7</div>
+                            <article class="step-card">
+                                <div
+                                    class="step-card__img"
+                                    style="
+                                        background-image: url(&quot;assets/step7.jpg&quot;);
+                                    "
+                                ></div>
+                                <h3 class="step-card__title">Встаем</h3>
+                                <p class="step-card__desc">
+                                    Медленно поднимаемся, с ровной спиной, держа
+                                    равновесие.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="step-card__num">8</div>
+                            <article class="step-card">
+                                <div
+                                    class="step-card__img"
+                                    style="
+                                        background-image: url(&quot;assets/step8.jpg&quot;);
+                                    "
+                                ></div>
+                                <h3 class="step-card__title">Ииииху!</h3>
+                                <p class="step-card__desc">
+                                    Можно отпустить одну руку, будет проще
+                                    балансировать.
+                                </p>
+                                <span class="step-card__big-emoji">🤩</span>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <button
+                    class="scroll-indicator"
+                    type="button"
+                    aria-label="Go to next learning step"
+                >
+                    <span
+                        class="scroll-indicator__bar"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="scroll-indicator__handle" aria-hidden="true"
+                        >🙂</span
+                    >
+                </button>
+            </section>
+
+            <!-- BITALENT / CONTACT -->
+            <section
+                class="contact"
+                style="
+                    background-image: url(&quot;assets/bitalent-bg.jpg&quot;);
+                "
+            >
+                <div class="contact__copy">
+                    <img
+                        class="contact__logo"
+                        src="assets/bitalent-logo.png"
+                        alt="Bitalent"
+                    />
+                    <h2 class="contact__title">
+                        Постоянно<br />на <span class="emoji">☎</span> связи
+                    </h2>
+                    <p class="contact__lead">
+                        Стоимость рассчитывается по количеству сетов. Вы можете
+                        купить сертификат на любую сумму.
+                    </p>
+                </div>
+                <img
+                    class="contact__kid"
+                    src="assets/bitalent-kid.png"
+                    alt=""
+                />
+            </section>
+
+            <!-- MAP -->
+            <section class="section section--map">
+                <div
+                    class="map"
+                    style="background-image: url(&quot;assets/map.png&quot;)"
+                >
+                    <div class="map__overlay"></div>
+                    <header class="section__head section__head--white">
+                        <h2 class="section__title">
+                            Как <span class="emoji">🗺️</span> добраться
+                        </h2>
+                        <p class="section__lead">
+                            Мы находимся на городском пляже Вадул-луй-Воды.
+                        </p>
+                    </header>
+
+                    <div class="map__buttons">
+                        <button class="btn btn--primary">
+                            <span class="ico" aria-hidden="true">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <path
+                                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"
+                                    />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </span>
+                            Google Map
+                        </button>
+                        <button class="btn btn--dark">130 Маршрутка</button>
+                        <button class="btn btn--dark">131 Маршрутка</button>
+                        <button class="btn btn--dark">31 Автобус + 2км</button>
+                    </div>
+
+                    <div class="map__pin">
+                        <img src="assets/logo.webp" alt="" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- BOATS -->
+            <section class="section">
+                <h2 class="section__title section__title--center">
+                    <span class="emoji">⛵</span> Лодочки
+                </h2>
+
+                <div class="boats">
+                    <article class="boat-card">
+                        <div class="boat-card__copy">
+                            <p class="boat-card__sub">Гидроцикл</p>
+                            <h3 class="boat-card__title">Sea-Doo Spark</h3>
+                        </div>
+                        <img
+                            class="boat-card__img"
+                            src="assets/seadoo-spark.png"
+                            alt=""
+                        />
+                        <svg
+                            class="waves waves--back"
+                            viewBox="0 0 740 203"
+                            preserveAspectRatio="none"
+                            aria-hidden="true"
+                        >
+                            <path
+                                class="waves__band waves__band--1"
+                                d="M0 28 C18 28 18 42 37 42 C56 42 56 28 74 28 C93 28 93 42 111 42 C130 42 130 28 148 28 C167 28 167 42 185 42 C204 42 204 28 222 28 C241 28 241 42 259 42 C278 42 278 28 296 28 C315 28 315 42 333 42 C352 42 352 28 370 28 C389 28 389 42 407 42 C426 42 426 28 444 28 C463 28 463 42 481 42 C500 42 500 28 518 28 C537 28 537 42 555 42 C574 42 574 28 592 28 C611 28 611 42 629 42 C648 42 648 28 666 28 C685 28 685 42 703 42 C722 42 722 28 740 28 L740 143 L0 143 Z"
+                            />
+                            <path
+                                class="waves__band waves__band--2"
+                                d="M0 28 C18 28 18 42 37 42 C56 42 56 28 74 28 C93 28 93 42 111 42 C130 42 130 28 148 28 C167 28 167 42 185 42 C204 42 204 28 222 28 C241 28 241 42 259 42 C278 42 278 28 296 28 C315 28 315 42 333 42 C352 42 352 28 370 28 C389 28 389 42 407 42 C426 42 426 28 444 28 C463 28 463 42 481 42 C500 42 500 28 518 28 C537 28 537 42 555 42 C574 42 574 28 592 28 C611 28 611 42 629 42 C648 42 648 28 666 28 C685 28 685 42 703 42 C722 42 722 28 740 28 L740 143 L0 143 Z"
+                                transform="translate(0 30)"
+                            />
+                            <path
+                                class="waves__band waves__band--3"
+                                d="M0 28 C18 28 18 42 37 42 C56 42 56 28 74 28 C93 28 93 42 111 42 C130 42 130 28 148 28 C167 28 167 42 185 42 C204 42 204 28 222 28 C241 28 241 42 259 42 C278 42 278 28 296 28 C315 28 315 42 333 42 C352 42 352 28 370 28 C389 28 389 42 407 42 C426 42 426 28 444 28 C463 28 463 42 481 42 C500 42 500 28 518 28 C537 28 537 42 555 42 C574 42 574 28 592 28 C611 28 611 42 629 42 C648 42 648 28 666 28 C685 28 685 42 703 42 C722 42 722 28 740 28 L740 143 L0 143 Z"
+                                transform="translate(0 60)"
+                            />
+                        </svg>
+                        <svg
+                            class="waves waves--front"
+                            viewBox="0 0 740 203"
+                            preserveAspectRatio="none"
+                            aria-hidden="true"
+                        >
+                            <path
+                                class="waves__band waves__band--4"
+                                d="M0 28 C18 28 18 42 37 42 C56 42 56 28 74 28 C93 28 93 42 111 42 C130 42 130 28 148 28 C167 28 167 42 185 42 C204 42 204 28 222 28 C241 28 241 42 259 42 C278 42 278 28 296 28 C315 28 315 42 333 42 C352 42 352 28 370 28 C389 28 389 42 407 42 C426 42 426 28 444 28 C463 28 463 42 481 42 C500 42 500 28 518 28 C537 28 537 42 555 42 C574 42 574 28 592 28 C611 28 611 42 629 42 C648 42 648 28 666 28 C685 28 685 42 703 42 C722 42 722 28 740 28 L740 143 L0 143 Z"
+                            />
+                            <path
+                                class="waves__band waves__band--5"
+                                d="M0 28 C18 28 18 42 37 42 C56 42 56 28 74 28 C93 28 93 42 111 42 C130 42 130 28 148 28 C167 28 167 42 185 42 C204 42 204 28 222 28 C241 28 241 42 259 42 C278 42 278 28 296 28 C315 28 315 42 333 42 C352 42 352 28 370 28 C389 28 389 42 407 42 C426 42 426 28 444 28 C463 28 463 42 481 42 C500 42 500 28 518 28 C537 28 537 42 555 42 C574 42 574 28 592 28 C611 28 611 42 629 42 C648 42 648 28 666 28 C685 28 685 42 703 42 C722 42 722 28 740 28 L740 143 L0 143 Z"
+                                transform="translate(0 30)"
+                            />
+                            <path
+                                class="waves__band waves__band--6"
+                                d="M0 28 C18 28 18 42 37 42 C56 42 56 28 74 28 C93 28 93 42 111 42 C130 42 130 28 148 28 C167 28 167 42 185 42 C204 42 204 28 222 28 C241 28 241 42 259 42 C278 42 278 28 296 28 C315 28 315 42 333 42 C352 42 352 28 370 28 C389 28 389 42 407 42 C426 42 426 28 444 28 C463 28 463 42 481 42 C500 42 500 28 518 28 C537 28 537 42 555 42 C574 42 574 28 592 28 C611 28 611 42 629 42 C648 42 648 28 666 28 C685 28 685 42 703 42 C722 42 722 28 740 28 L740 143 L0 143 Z"
+                                transform="translate(0 60)"
+                            />
+                        </svg>
+                    </article>
+
+                    <article class="boat-card">
+                        <div class="boat-card__copy">
+                            <p class="boat-card__sub">Гидроцикл</p>
+                            <h3 class="boat-card__title">Sea-Doo Wake</h3>
+                        </div>
+                        <img
+                            class="boat-card__img"
+                            src="assets/seadoo-wake.png"
+                            alt=""
+                        />
+                        <svg
+                            class="waves waves--back"
+                            viewBox="0 0 740 203"
+                            preserveAspectRatio="none"
+                            aria-hidden="true"
+                        >
+                            <path
+                                class="waves__band waves__band--1"
+                                d="M0 28 C18 28 18 42 37 42 C56 42 56 28 74 28 C93 28 93 42 111 42 C130 42 130 28 148 28 C167 28 167 42 185 42 C204 42 204 28 222 28 C241 28 241 42 259 42 C278 42 278 28 296 28 C315 28 315 42 333 42 C352 42 352 28 370 28 C389 28 389 42 407 42 C426 42 426 28 444 28 C463 28 463 42 481 42 C500 42 500 28 518 28 C537 28 537 42 555 42 C574 42 574 28 592 28 C611 28 611 42 629 42 C648 42 648 28 666 28 C685 28 685 42 703 42 C722 42 722 28 740 28 L740 143 L0 143 Z"
+                            />
+                            <path
+                                class="waves__band waves__band--2"
+                                d="M0 28 C18 28 18 42 37 42 C56 42 56 28 74 28 C93 28 93 42 111 42 C130 42 130 28 148 28 C167 28 167 42 185 42 C204 42 204 28 222 28 C241 28 241 42 259 42 C278 42 278 28 296 28 C315 28 315 42 333 42 C352 42 352 28 370 28 C389 28 389 42 407 42 C426 42 426 28 444 28 C463 28 463 42 481 42 C500 42 500 28 518 28 C537 28 537 42 555 42 C574 42 574 28 592 28 C611 28 611 42 629 42 C648 42 648 28 666 28 C685 28 685 42 703 42 C722 42 722 28 740 28 L740 143 L0 143 Z"
+                                transform="translate(0 30)"
+                            />
+                            <path
+                                class="waves__band waves__band--3"
+                                d="M0 28 C18 28 18 42 37 42 C56 42 56 28 74 28 C93 28 93 42 111 42 C130 42 130 28 148 28 C167 28 167 42 185 42 C204 42 204 28 222 28 C241 28 241 42 259 42 C278 42 278 28 296 28 C315 28 315 42 333 42 C352 42 352 28 370 28 C389 28 389 42 407 42 C426 42 426 28 444 28 C463 28 463 42 481 42 C500 42 500 28 518 28 C537 28 537 42 555 42 C574 42 574 28 592 28 C611 28 611 42 629 42 C648 42 648 28 666 28 C685 28 685 42 703 42 C722 42 722 28 740 28 L740 143 L0 143 Z"
+                                transform="translate(0 60)"
+                            />
+                        </svg>
+                        <svg
+                            class="waves waves--front"
+                            viewBox="0 0 740 203"
+                            preserveAspectRatio="none"
+                            aria-hidden="true"
+                        >
+                            <path
+                                class="waves__band waves__band--4"
+                                d="M0 28 C18 28 18 42 37 42 C56 42 56 28 74 28 C93 28 93 42 111 42 C130 42 130 28 148 28 C167 28 167 42 185 42 C204 42 204 28 222 28 C241 28 241 42 259 42 C278 42 278 28 296 28 C315 28 315 42 333 42 C352 42 352 28 370 28 C389 28 389 42 407 42 C426 42 426 28 444 28 C463 28 463 42 481 42 C500 42 500 28 518 28 C537 28 537 42 555 42 C574 42 574 28 592 28 C611 28 611 42 629 42 C648 42 648 28 666 28 C685 28 685 42 703 42 C722 42 722 28 740 28 L740 143 L0 143 Z"
+                            />
+                            <path
+                                class="waves__band waves__band--5"
+                                d="M0 28 C18 28 18 42 37 42 C56 42 56 28 74 28 C93 28 93 42 111 42 C130 42 130 28 148 28 C167 28 167 42 185 42 C204 42 204 28 222 28 C241 28 241 42 259 42 C278 42 278 28 296 28 C315 28 315 42 333 42 C352 42 352 28 370 28 C389 28 389 42 407 42 C426 42 426 28 444 28 C463 28 463 42 481 42 C500 42 500 28 518 28 C537 28 537 42 555 42 C574 42 574 28 592 28 C611 28 611 42 629 42 C648 42 648 28 666 28 C685 28 685 42 703 42 C722 42 722 28 740 28 L740 143 L0 143 Z"
+                                transform="translate(0 30)"
+                            />
+                            <path
+                                class="waves__band waves__band--6"
+                                d="M0 28 C18 28 18 42 37 42 C56 42 56 28 74 28 C93 28 93 42 111 42 C130 42 130 28 148 28 C167 28 167 42 185 42 C204 42 204 28 222 28 C241 28 241 42 259 42 C278 42 278 28 296 28 C315 28 315 42 333 42 C352 42 352 28 370 28 C389 28 389 42 407 42 C426 42 426 28 444 28 C463 28 463 42 481 42 C500 42 500 28 518 28 C537 28 537 42 555 42 C574 42 574 28 592 28 C611 28 611 42 629 42 C648 42 648 28 666 28 C685 28 685 42 703 42 C722 42 722 28 740 28 L740 143 L0 143 Z"
+                                transform="translate(0 60)"
+                            />
+                        </svg>
+                    </article>
+                </div>
+
+                <article class="boat-card boat-card--wide">
+                    <div class="boat-card__copy">
+                        <p class="boat-card__sub">Катер</p>
+                        <h3 class="boat-card__title">Super Air Nautique</h3>
+                        <p class="boat-card__sub">г. Тирасполь</p>
+                    </div>
+                    <img
+                        class="boat-card__img boat-card__img--wide"
+                        src="assets/super-air.png"
+                        alt=""
+                    />
+                    <svg
+                        class="waves waves--wide waves--back"
+                        viewBox="0 0 1360 294"
+                        preserveAspectRatio="none"
+                        aria-hidden="true"
+                    >
+                        <path
+                            class="waves__band waves__band--wide-3"
+                            d="M37.1429 10.6737L26.501 21.3474C18.184 29.6893 4.67314 29.6893 -3.64381 21.3474C-17.0426 7.9085 -40 17.3976 -40 36.3748V323.409H1400V36.3748C1400 17.3976 1377.04 7.90848 1363.64 21.3474C1355.33 29.6892 1341.82 29.6892 1333.5 21.3474L1322.86 10.6737C1308.67 -3.55795 1285.62 -3.55791 1271.43 10.6736C1257.24 24.9052 1234.19 24.9053 1220 10.6737C1205.81 -3.55795 1182.76 -3.55791 1168.57 10.6737C1154.38 24.9053 1131.33 24.9053 1117.14 10.6737C1102.95 -3.55794 1079.9 -3.55793 1065.71 10.6737C1051.53 24.9053 1028.47 24.9053 1014.29 10.6737C1000.1 -3.55794 977.046 -3.55793 962.857 10.6737C948.668 24.9053 925.618 24.9053 911.429 10.6737C897.239 -3.55795 874.189 -3.55793 860 10.6737C845.811 24.9053 822.761 24.9053 808.571 10.6737C794.382 -3.55794 771.332 -3.55793 757.143 10.6737C742.954 24.9053 719.903 24.9053 705.714 10.6737C691.525 -3.55793 668.475 -3.55795 654.286 10.6737C640.097 24.9053 617.046 24.9053 602.857 10.6737C588.668 -3.55794 565.618 -3.55794 551.429 10.6737C537.24 24.9053 514.189 24.9053 500 10.6737C485.811 -3.55794 462.761 -3.55794 448.571 10.6737C434.382 24.9053 411.332 24.9053 397.143 10.6737C382.954 -3.55794 359.903 -3.55794 345.714 10.6737C331.525 24.9053 308.475 24.9053 294.286 10.6737C280.097 -3.55795 257.046 -3.55794 242.857 10.6737C228.668 24.9053 205.618 24.9053 191.429 10.6737C177.239 -3.55794 154.189 -3.55794 140 10.6737C125.811 24.9053 102.761 24.9053 88.5714 10.6737C74.3823 -3.55794 51.332 -3.55794 37.1429 10.6737Z"
+                        />
+                        <path
+                            class="waves__band waves__band--wide-4"
+                            d="M37.1429 10.6595L26.4951 21.319C18.1768 29.6464 4.6804 29.6464 -3.63792 21.319C-17.05 7.89216 -40 17.391 -40 36.3689V272.917H1400V36.3689C1400 17.391 1377.05 7.89214 1363.64 21.3189C1355.32 29.6464 1341.82 29.6464 1333.5 21.3189L1322.86 10.6595C1308.66 -3.55313 1285.63 -3.55309 1271.43 10.6595C1257.23 24.8721 1234.2 24.8721 1220 10.6595C1205.8 -3.55314 1182.77 -3.5531 1168.57 10.6595C1154.37 24.8721 1131.34 24.8721 1117.14 10.6595C1102.95 -3.55313 1079.91 -3.55312 1065.71 10.6595C1051.52 24.8721 1028.48 24.8721 1014.29 10.6595C1000.09 -3.55312 977.054 -3.55312 962.857 10.6595C948.66 24.8721 925.626 24.8721 911.429 10.6595C897.232 -3.55313 874.197 -3.55311 860 10.6595C845.803 24.8721 822.768 24.8721 808.571 10.6595C794.374 -3.55313 771.34 -3.55312 757.143 10.6595C742.946 24.8721 719.911 24.8721 705.714 10.6595C691.517 -3.55312 668.483 -3.55313 654.286 10.6595C640.089 24.8721 617.054 24.8721 602.857 10.6595C588.66 -3.55312 565.626 -3.55313 551.429 10.6595C537.232 24.8721 514.197 24.8721 500 10.6595C485.803 -3.55313 462.769 -3.55313 448.571 10.6595C434.374 24.8721 411.34 24.8721 397.143 10.6595C382.946 -3.55313 359.911 -3.55313 345.714 10.6595C331.517 24.8721 308.483 24.8721 294.286 10.6595C280.089 -3.55313 257.054 -3.55313 242.857 10.6595C228.66 24.8721 205.626 24.8721 191.429 10.6595C177.232 -3.55313 154.197 -3.55313 140 10.6595C125.803 24.8721 102.768 24.8721 88.5714 10.6595C74.3744 -3.55313 51.3399 -3.55314 37.1429 10.6595Z"
+                            transform="translate(0 60)"
+                        />
+                    </svg>
+                    <svg
+                        class="waves waves--wide waves--front"
+                        viewBox="0 0 1360 294"
+                        preserveAspectRatio="none"
+                        aria-hidden="true"
+                    >
+                        <path
+                            class="waves__band waves__band--wide-5"
+                            d="M37.1429 10.6715L26.5 21.3429C18.1828 29.6825 4.67431 29.6825 -3.64287 21.3429C-17.0438 7.90595 -40 17.3967 -40 36.374V223.266H1400V36.3739C1400 17.3966 1377.04 7.90593 1363.64 21.3429C1355.33 29.6824 1341.82 29.6824 1333.5 21.3429L1322.86 10.6715C1308.67 -3.55711 1285.62 -3.55706 1271.43 10.6714C1257.24 24.9 1234.19 24.9001 1220 10.6715C1205.81 -3.5571 1182.76 -3.55706 1168.57 10.6715C1154.38 24.9 1131.33 24.9001 1117.14 10.6715C1102.95 -3.55709 1079.9 -3.55709 1065.71 10.6715C1051.52 24.9 1028.48 24.9001 1014.29 10.6715C1000.1 -3.5571 977.048 -3.55708 962.857 10.6715C948.667 24.9 925.619 24.9001 911.429 10.6715C897.238 -3.5571 874.19 -3.55708 860 10.6715C845.81 24.9 822.762 24.9001 808.571 10.6715C794.381 -3.55709 771.333 -3.55709 757.143 10.6715C742.952 24.9 719.905 24.9 705.714 10.6715C691.524 -3.55709 668.476 -3.5571 654.286 10.6715C640.095 24.9001 617.048 24.9 602.857 10.6715C588.667 -3.55708 565.619 -3.5571 551.429 10.6715C537.238 24.9 514.19 24.9001 500 10.6715C485.81 -3.5571 462.762 -3.5571 448.571 10.6715C434.381 24.9001 411.333 24.9001 397.143 10.6715C382.952 -3.5571 359.905 -3.55709 345.714 10.6715C331.524 24.9001 308.476 24.9001 294.286 10.6715C280.095 -3.5571 257.048 -3.5571 242.857 10.6715C228.667 24.9 205.619 24.9001 191.429 10.6715C177.238 -3.5571 154.19 -3.55711 140 10.6715C125.81 24.9001 102.762 24.9001 88.5714 10.6715C74.381 -3.5571 51.3333 -3.55711 37.1429 10.6715Z"
+                            transform="translate(0 119)"
+                        />
+                        <path
+                            class="waves__band waves__band--wide-6"
+                            d="M37.1429 10.6539L26.4928 21.3077C18.1739 29.6296 4.68324 29.6296 -3.63562 21.3077C-17.0529 7.88569 -40 17.3883 -40 36.3666V222.754H1400V36.3665C1400 17.3883 1377.05 7.88568 1363.64 21.3077C1355.32 29.6295 1341.83 29.6295 1333.51 21.3077L1322.86 10.6538C1308.66 -3.55133 1285.63 -3.55129 1271.43 10.6538C1257.23 24.859 1234.2 24.859 1220 10.6539C1205.8 -3.55133 1182.77 -3.55129 1168.57 10.6539C1154.37 24.859 1131.34 24.859 1117.14 10.6539C1102.94 -3.55132 1079.91 -3.55131 1065.71 10.6539C1051.51 24.859 1028.49 24.859 1014.29 10.6539C1000.09 -3.55132 977.057 -3.55131 962.857 10.6539C948.657 24.859 925.629 24.859 911.429 10.6539C897.229 -3.55133 874.2 -3.55131 860 10.6539C845.8 24.859 822.772 24.859 808.571 10.6539C794.371 -3.55132 771.343 -3.55131 757.143 10.6539C742.943 24.859 719.914 24.859 705.714 10.6539C691.514 -3.55131 668.486 -3.55132 654.286 10.6539C640.086 24.859 617.057 24.859 602.857 10.6539C588.657 -3.55131 565.629 -3.55132 551.429 10.6538C537.229 24.859 514.2 24.859 500 10.6539C485.8 -3.55132 462.772 -3.55132 448.571 10.6539C434.371 24.859 411.343 24.859 397.143 10.6539C382.943 -3.55132 359.914 -3.55132 345.714 10.6539C331.514 24.859 308.486 24.859 294.286 10.6539C280.086 -3.55132 257.057 -3.55131 242.857 10.6539C228.657 24.859 205.629 24.859 191.429 10.6539C177.228 -3.55132 154.2 -3.55132 140 10.6539C125.8 24.859 102.772 24.859 88.5714 10.6539C74.3713 -3.55132 51.343 -3.55132 37.1429 10.6539Z"
+                            transform="translate(0 180)"
+                        />
+                        <path
+                            class="waves__band waves__band--wide-7"
+                            d="M37.1429 10.6829L26.5048 21.3659C18.1887 29.717 4.66846 29.717 -3.64761 21.3659C-17.0379 7.91912 -40 17.4021 -40 36.3788V223.602H1400V36.3787C1400 17.402 1377.04 7.9191 1363.65 21.3658C1355.33 29.717 1341.81 29.7169 1333.5 21.3658L1322.86 10.6829C1308.67 -3.561 1285.61 -3.56095 1271.43 10.6829C1257.24 24.9267 1234.18 24.9268 1220 10.6829C1205.82 -3.56099 1182.76 -3.56095 1168.57 10.6829C1154.39 24.9267 1131.33 24.9268 1117.14 10.6829C1102.96 -3.56098 1079.9 -3.56098 1065.71 10.6829C1051.53 24.9268 1028.47 24.9268 1014.29 10.6829C1000.1 -3.56099 977.041 -3.56099 962.857 10.6829C948.673 24.9268 925.613 24.9268 911.429 10.6829C897.245 -3.561 874.184 -3.56098 860 10.6829C845.816 24.9268 822.755 24.9268 808.571 10.6829C794.387 -3.56099 771.327 -3.56098 757.143 10.6829C742.959 24.9268 719.898 24.9268 705.714 10.6829C691.53 -3.56098 668.47 -3.56099 654.286 10.6829C640.102 24.9268 617.041 24.9268 602.857 10.6829C588.673 -3.56098 565.613 -3.561 551.429 10.6829C537.245 24.9268 514.184 24.9268 500 10.6829C485.816 -3.561 462.756 -3.561 448.571 10.6829C434.387 24.9268 411.327 24.9268 397.143 10.6829C382.959 -3.561 359.898 -3.56099 345.714 10.6829C331.53 24.9268 308.47 24.9268 294.286 10.6829C280.102 -3.561 257.041 -3.56099 242.857 10.6829C228.673 24.9268 205.613 24.9268 191.429 10.6829C177.245 -3.56099 154.184 -3.561 140 10.6829C125.816 24.9268 102.756 24.9268 88.5714 10.6829C74.3874 -3.56099 51.3269 -3.561 37.1429 10.6829Z"
+                            transform="translate(0 240)"
+                        />
+                    </svg>
+                </article>
+            </section>
+
+            <!-- FAQ -->
+            <section class="section">
+                <h2 class="section__title section__title--center">
+                    <span class="emoji">🤓</span> Вопросики
+                </h2>
+
+                <ul class="faq">
+                    <li class="faq-card">
+                        <span class="faq-card__emoji">📍</span>
+                        <div>
+                            <h3>Где все<br />происходит</h3>
+                            <p>
+                                Чаще всего заезды происходят вблизи Кишинева.
+                                Вдх. Гидигич, Днестр, Данчены.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="faq-card">
+                        <span class="faq-card__emoji">🩳</span>
+                        <div>
+                            <h3>Что<br />нужно</h3>
+                            <p>
+                                Мы предоставим все снаряжение. Вам желательно
+                                иместь плавательные шорты, тапочки для воды,
+                                полотенце и крем от солнца.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="faq-card">
+                        <span class="faq-card__emoji">🏄‍♂️</span>
+                        <div>
+                            <h3>Первый<br />заезд</h3>
+                            <p>
+                                Перед заездом с вами будет проведен инструктаж.
+                                Во время катания вас будет сопровождать
+                                инструктор.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="faq-card">
+                        <span class="faq-card__emoji">👶</span>
+                        <div>
+                            <h3>Для<br />детей</h3>
+                            <p>
+                                Вэйкбрдом занимаются дети с 3х лет, но пока мы
+                                можем предоставить оборудование для подростков
+                                от 12 лет.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="faq-card">
+                        <span class="faq-card__emoji">🥲</span>
+                        <div>
+                            <h3>Отмена<br />бронирования</h3>
+                            <p>
+                                Вы сможете отменить бронирование за 48 часов до
+                                вашего заезжа.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="faq-card">
+                        <span class="faq-card__emoji">🌧️</span>
+                        <div>
+                            <h3>Непогода</h3>
+                            <p>
+                                Из-за непогоды выезды переносятся только если не
+                                выезжает команда. Слабый дождик нам не помеха,
+                                промокнут в любом случае все :)
+                            </p>
+                        </div>
+                    </li>
+                    <li class="faq-card">
+                        <span class="faq-card__emoji">🪵</span>
+                        <div>
+                            <h3>Умение<br />плавать</h3>
+                            <p>
+                                Доска и жилет имеет высокую положительную
+                                плавучесть. Уметь плавать не нужно, главное не
+                                бояться воды. Но и с этим мы поможем.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="faq-card">
+                        <span class="faq-card__emoji">🛟</span>
+                        <div>
+                            <h3>Безопасность</h3>
+                            <p>
+                                Это экстремальный вид спорта и предполагают
+                                наличие рисков получения травм, но мы делаем все
+                                чтобы минимизировать эти риски.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- GALLERY -->
+            <section class="gallery-section">
+                <div class="gallery-carousel swiper" aria-label="Wake.md gallery">
+                    <div class="swiper-wrapper">
+                        <div class="gallery-grid swiper-slide">
+                            <div class="gallery-row">
+                                <img
+                                    src="assets/gallery1.jpg"
+                                    alt=""
+                                    class="gallery-img gallery-img--square"
+                                />
+                                <img src="assets/gallery2.jpg" alt="" class="gallery-img gallery-img--wide" />
+                                <img src="assets/gallery4.jpg" alt="" class="gallery-img gallery-img--square" />
+                            </div>
+                            <div class="gallery-row">
+                                <img src="assets/gallery5.jpg" alt="" class="gallery-img gallery-img--wide" />
+                                <img src="assets/gallery3.jpg" alt="" class="gallery-img gallery-img--wide" />
+                                <img src="assets/gallery4.jpg" alt="" class="gallery-img gallery-img--square" />
+                            </div>
+                        </div>
+                        <div class="gallery-grid swiper-slide">
+                            <div class="gallery-row">
+                                <img
+                                    src="assets/gallery1.jpg"
+                                    alt=""
+                                    class="gallery-img gallery-img--square"
+                                />
+                                <img
+                                    src="assets/gallery2.jpg"
+                                    alt=""
+                                    class="gallery-img gallery-img--wide"
+                                />
+                                <img src="assets/gallery4.jpg" alt="" class="gallery-img gallery-img--square" />
+                            </div>
+                            <div class="gallery-row">
+                                <img src="assets/gallery5.jpg" alt="" class="gallery-img gallery-img--wide" />
+                                <img src="assets/gallery3.jpg" alt="" class="gallery-img gallery-img--wide" />
+                                <img
+                                    src="assets/gallery4.jpg"
+                                    alt=""
+                                    class="gallery-img gallery-img--square"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="footer">
+                <div class="footer__row">
+                    <p>© 2026 Wake.md <span class="emoji">😎</span></p>
+                    <nav class="footer__links" aria-label="Legal">
+                        <a href="#">Usage policy</a>
+                        <a href="#">Privacy policy</a>
+                    </nav>
+                </div>
+            </footer>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            if (window.Swiper) {
+                const stepEmotions = [
+                    "🙂",
+                    "😌",
+                    "😤",
+                    "😎",
+                    "😬",
+                    "🤔",
+                    "😃",
+                    "🤩",
+                ];
+                const stepsIndicator =
+                    document.querySelector(".scroll-indicator");
+                const stepsIndicatorBar = document.querySelector(
+                    ".scroll-indicator__bar",
+                );
+                const stepsIndicatorHandle = document.querySelector(
+                    ".scroll-indicator__handle",
+                );
+                const stepsElement = document.querySelector(".steps");
+
+                const getStepsSlidesOffsetAfter = () => {
+                    if (!stepsElement) return 0;
+
+                    const firstSlide =
+                        stepsElement.querySelector(".swiper-slide");
+                    if (!firstSlide) return 0;
+
+                    return Math.max(
+                        stepsElement.clientWidth - firstSlide.clientWidth,
+                        0,
+                    );
+                };
+
+                const updateStepsIndicator = (swiper) => {
+                    if (!stepsIndicator || !stepsIndicatorHandle) return;
+
+                    const maxIndex = Math.max(swiper.slides.length - 1, 1);
+                    const progress = swiper.realIndex / maxIndex;
+
+                    stepsIndicator.style.setProperty(
+                        "--steps-progress",
+                        progress,
+                    );
+                    stepsIndicatorHandle.textContent =
+                        stepEmotions[swiper.realIndex] || stepEmotions[0];
+                    stepsIndicator.setAttribute(
+                        "aria-label",
+                        `Learning step ${swiper.realIndex + 1} of ${swiper.slides.length}`,
+                    );
+                };
+
+                const videoCarousel = new Swiper(".video-carousel", {
+                    slidesPerView: "auto",
+                    spaceBetween: 16,
+                    centeredSlides: false,
+                    grabCursor: true,
+                    watchSlidesProgress: true,
+                    keyboard: {
+                        enabled: true,
+                    },
+                    navigation: {
+                        nextEl: ".video-carousel__nav--next",
+                        prevEl: ".video-carousel__nav--prev",
+                    },
+                    pagination: {
+                        el: ".video-carousel__pagination",
+                        clickable: true,
+                    },
+                    breakpoints: {
+                        768: {
+                            spaceBetween: 16,
+                        },
+                        1200: {
+                            spaceBetween: 20,
+                        },
+                    },
+                    on: {
+                        slideChange() {
+                            document
+                                .querySelectorAll(".video-carousel video")
+                                .forEach((video) => {
+                                    video.pause();
+                                });
+                        },
+                    },
+                });
+
+                const stepsCarousel = new Swiper(".steps", {
+                    slidesPerView: "auto",
+                    spaceBetween: 20,
+                    slidesOffsetAfter: getStepsSlidesOffsetAfter(),
+                    grabCursor: true,
+                    keyboard: {
+                        enabled: true,
+                    },
+                    breakpoints: {
+                        0: {
+                            spaceBetween: 8,
+                        },
+                        768: {
+                            spaceBetween: 16,
+                        },
+                        1200: {
+                            spaceBetween: 20,
+                        },
+                    },
+                    on: {
+                        init(swiper) {
+                            updateStepsIndicator(swiper);
+                        },
+                        slideChange(swiper) {
+                            updateStepsIndicator(swiper);
+                        },
+                    },
+                });
+
+                window.addEventListener("resize", () => {
+                    stepsCarousel.params.slidesOffsetAfter =
+                        getStepsSlidesOffsetAfter();
+                    stepsCarousel.update();
+                    updateStepsIndicator(stepsCarousel);
+                });
+
+                if (stepsIndicator && stepsIndicatorBar) {
+                    let isDraggingStepsIndicator = false;
+
+                    const getStepIndexFromPointer = (event) => {
+                        const rect = stepsIndicatorBar.getBoundingClientRect();
+                        const progress = Math.min(
+                            Math.max(
+                                (event.clientX - rect.left) / rect.width,
+                                0,
+                            ),
+                            1,
+                        );
+
+                        return Math.round(
+                            progress * (stepsCarousel.slides.length - 1),
+                        );
+                    };
+
+                    const goToStepFromPointer = (event) => {
+                        const targetIndex = getStepIndexFromPointer(event);
+
+                        stepsCarousel.slideTo(targetIndex);
+                    };
+
+                    stepsIndicator.addEventListener("pointerdown", (event) => {
+                        isDraggingStepsIndicator = true;
+                        stepsIndicator.classList.add("is-dragging");
+                        stepsIndicator.setPointerCapture(event.pointerId);
+                        goToStepFromPointer(event);
+                    });
+
+                    stepsIndicator.addEventListener("pointermove", (event) => {
+                        if (!isDraggingStepsIndicator) return;
+
+                        goToStepFromPointer(event);
+                    });
+
+                    stepsIndicator.addEventListener("pointerup", (event) => {
+                        if (!isDraggingStepsIndicator) return;
+
+                        isDraggingStepsIndicator = false;
+                        stepsIndicator.classList.remove("is-dragging");
+                        goToStepFromPointer(event);
+                    });
+
+                    stepsIndicator.addEventListener("pointercancel", () => {
+                        isDraggingStepsIndicator = false;
+                        stepsIndicator.classList.remove("is-dragging");
+                    });
+                }
+            }
+
+            document.querySelectorAll(".big-video").forEach((section) => {
+                const video = section.querySelector("video");
+                const button = section.querySelector(".play-big");
+
+                if (!video || !button) return;
+
+                const syncPlayButton = () => {
+                    button.hidden = !video.paused;
+                };
+
+                button.addEventListener("click", () => {
+                    video.play().catch(() => {});
+                });
+                video.addEventListener("play", syncPlayButton);
+                video.addEventListener("pause", syncPlayButton);
+                video.addEventListener("ended", syncPlayButton);
+            });
+        </script>
+    </body>
+</html>
