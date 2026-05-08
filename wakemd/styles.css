@@ -104,7 +104,7 @@ a {
     top: 0;
     width: 100%;
     height: 1021px;
-    background-image: url("assets/hero.webp");
+    background-image: url("assets/design/sections/hero.webp");
     background-size: 100% auto;
     background-repeat: no-repeat;
     z-index: 0;
@@ -174,8 +174,6 @@ a {
     gap: 16px;
     border-radius: 999px;
     padding: 0;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
     width: fit-content;
 }
 .pill--ghost .ico {
@@ -187,7 +185,6 @@ a {
     padding: 12px;
     display: inline-flex;
     color: white;
-    backdrop-filter: blur(8px);
 }
 .pill__text {
     font-family: "Montserrat Alternates", sans-serif;
@@ -241,9 +238,7 @@ a {
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
 }
-.btn--ghost.mobile {
-    display: none;
-}
+
 .btn--ghost-dark {
     border-color: rgba(17, 27, 45, 0.2);
     color: var(--night);
@@ -285,6 +280,84 @@ a {
 .ico-btn svg {
     width: 24px;
     height: 24px;
+}
+
+/* ============================================================
+   TELEGRAM CHANNEL
+============================================================ */
+.telegram-channel {
+    position: relative;
+    z-index: 3;
+    padding: 0 40px;
+}
+
+.telegram-card {
+    width: 100%;
+    min-height: 152px;
+    padding: 32px;
+    border-radius: 40px;
+    background: rgba(11, 28, 29, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    color: var(--white);
+}
+
+.telegram-card__icon {
+    position: relative;
+    width: 88px;
+    height: 88px;
+    flex: 0 0 88px;
+    padding: 12px;
+    border-radius: 24px;
+    background: var(--white);
+    box-shadow: 0 10px 20.55px rgba(41, 108, 140, 0.32);
+}
+
+.telegram-card__icon svg {
+    width: 64px;
+    height: 64px;
+}
+
+.telegram-card__badge {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    background: #e43d39;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.telegram-card__copy {
+    min-width: 0;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.telegram-card__title {
+    font-size: 20px;
+}
+
+.telegram-card__text {
+    font-size: 16px;
+    opacity: 0.8;
 }
 
 /* ============================================================
@@ -497,6 +570,18 @@ a {
     border-radius: inherit;
     object-fit: cover;
 }
+.activity__avatar .activity__free-label {
+    z-index: 2;
+    top: -30px;
+    right: 0;
+    left: auto;
+    bottom: auto;
+    width: 82px;
+    height: auto;
+    border-radius: 0;
+    object-fit: contain;
+    pointer-events: none;
+}
 .activity__name {
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 600;
@@ -706,6 +791,47 @@ a {
 }
 
 /* ============================================================
+   GIFT CERTIFICATE
+============================================================ */
+.gift-certificate {
+    position: relative;
+    margin: 0 40px;
+    height: 640px;
+    border-radius: var(--radius-xl);
+    background-image: url("assets/design/sections/gift.webp");
+    background-size: cover;
+    background-position: center;
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+.gift-certificate__copy {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.gift-certificate__title {
+    margin: 0;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 48px;
+    color: var(--ink);
+}
+.gift-certificate__lead {
+    margin: 0;
+    width: 440px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: rgba(27, 26, 86, 0.6);
+}
+
+/* ============================================================
    CONTACT (BiTalent)
 ============================================================ */
 .contact {
@@ -713,6 +839,7 @@ a {
     margin: 0 40px;
     height: 600px;
     border-radius: var(--radius-xl);
+    background-image: url("assets/design/sections/bitalent-kid.webp");
     background-size: cover;
     background-position: center;
     padding: 80px;
@@ -729,8 +856,8 @@ a {
     max-width: 460px;
 }
 .contact__logo {
+    width: 215px;
     height: 48px;
-    width: auto;
 }
 .contact__title {
     margin: 0;
@@ -749,15 +876,6 @@ a {
     opacity: 0.6;
     width: 420px;
 }
-.contact__kid {
-    position: absolute;
-    right: 40px;
-    bottom: 0;
-    height: 560px;
-    width: auto;
-    z-index: 1;
-}
-
 /* ============================================================
    MAP
 ============================================================ */
@@ -834,6 +952,9 @@ a {
     position: relative;
     flex: 1;
     background: var(--white);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: var(--radius-xl);
     height: 457px;
     padding: 80px;
@@ -866,27 +987,14 @@ a {
     line-height: 1.1;
     color: var(--night);
 }
-.boat-card__img {
-    position: relative;
-    z-index: 2;
-    width: 80%;
-    height: auto;
-    align-self: flex-start;
-    margin-top: -40px;
-    transform: scaleX(-1);
+.boats .boat-card:nth-child(1) {
+    background-image: url("assets/content/boats/sea-doo-spark.webp");
 }
-.boat-card__img--wide {
-    position: absolute;
-    left: 80px;
-    right: 80px;
-    bottom: 110px;
-    width: calc(100% - 160px);
-    max-width: 1360px;
-    align-self: center;
-    transform: none;
-    margin: 0 auto;
+.boats .boat-card:nth-child(2) {
+    background-image: url("assets/content/boats/sea-doo-wake.webp");
 }
 .boat-card--wide {
+    background-image: url("assets/content/boats/super-air-nautique.webp");
     margin-top: 16px;
     padding: 80px 80px 144px;
     height: 737px;
@@ -896,75 +1004,6 @@ a {
 .boat-card--wide .boat-card__copy {
     align-items: flex-start;
     text-align: left;
-}
-.waves {
-    position: absolute;
-    left: -44px;
-    right: -24px;
-    width: calc(100% + 68px);
-    height: 203px;
-    pointer-events: none;
-}
-.waves--back {
-    bottom: 12px;
-    z-index: 1;
-}
-.waves--front {
-    bottom: -79px;
-    z-index: 3;
-}
-.waves__band {
-    fill: currentColor;
-}
-.waves__band--1 {
-    color: #7faabe;
-}
-.waves__band--2 {
-    color: #397f9b;
-}
-.waves__band--3 {
-    color: #1e6f8e;
-}
-.waves__band--4 {
-    color: #0f6383;
-}
-.waves__band--5 {
-    color: #0a5876;
-}
-.waves__band--6 {
-    color: #064d68;
-}
-.waves__band--wide-3 {
-    color: #004c71;
-    opacity: 0.54;
-}
-.waves__band--wide-4 {
-    color: #004c71;
-    opacity: 0.54;
-}
-.waves__band--wide-5 {
-    color: #004c71;
-    opacity: 0.54;
-}
-.waves__band--wide-6 {
-    color: #004c71;
-    opacity: 0.54;
-}
-.waves__band--wide-7 {
-    color: #003149;
-    opacity: 0.4;
-}
-.boat-card--wide .waves--wide {
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 294px;
-}
-.boat-card--wide .waves--wide.waves--back {
-    bottom: 0;
-}
-.boat-card--wide .waves--wide.waves--front {
-    bottom: 0;
 }
 
 /* ============================================================
@@ -1015,37 +1054,35 @@ a {
 ============================================================ */
 .gallery-section {
     --gallery-track-gap: 24px;
+    --gallery-tile: clamp(360px, 28vw, 568px);
+    --gallery-wide: clamp(540px, 42vw, 856px);
     position: relative;
     padding: 0;
     overflow: hidden;
 }
 .gallery-carousel {
-    width: 100%;
-    overflow: visible;
-}
-.gallery-carousel .swiper-wrapper {
-    display: flex;
-    width: max-content;
-    gap: var(--gallery-track-gap);
-    transition: none;
-    animation: gallery-marquee 32s linear infinite;
-}
-.gallery-grid {
-    --gallery-tile: clamp(360px, 28vw, 568px);
-    --gallery-wide: clamp(540px, 42vw, 856px);
     display: flex;
     flex-direction: column;
-    width: max-content;
     gap: 24px;
-    padding: 0 60px;
+    width: 100%;
+    overflow: hidden;
 }
-.gallery-grid.swiper-slide {
-    width: auto;
-    height: auto;
+.gallery-track {
+    width: 100%;
+    padding: 0 60px;
+    overflow: visible;
 }
 .gallery-row {
     display: flex;
-    gap: 24px;
+    width: max-content;
+    gap: var(--gallery-track-gap);
+    will-change: transform;
+}
+.gallery-track--top .gallery-row {
+    animation: gallery-marquee-right 32s linear infinite;
+}
+.gallery-track--bottom .gallery-row {
+    animation: gallery-marquee-left 32s linear infinite;
 }
 .gallery-img {
     flex: none;
@@ -1058,8 +1095,18 @@ a {
     width: var(--gallery-tile);
 }
 
-@keyframes gallery-marquee {
+@keyframes gallery-marquee-left {
     to {
+        transform: translate3d(
+            calc(-50% - (var(--gallery-track-gap) / 2)),
+            0,
+            0
+        );
+    }
+}
+
+@keyframes gallery-marquee-right {
+    from {
         transform: translate3d(
             calc(-50% - (var(--gallery-track-gap) / 2)),
             0,
@@ -1082,12 +1129,22 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 20px;
 }
 .footer__links {
+    align-items: center;
     display: flex;
     gap: 24px;
-    opacity: 0.4;
+}
+.footer__payments {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer__payments img {
+    width: 48px;
+    height: 30px;
+    object-fit: contain;
+    display: block;
 }
 .footer__logo {
     width: 120px;
@@ -1133,7 +1190,7 @@ a {
     }
 
     .hero {
-        height: auto;
+        height: 1021px;
         min-height: 713px;
         padding: 0 24px;
         margin: 0;
@@ -1141,8 +1198,9 @@ a {
     }
 
     .hero__bg {
-        background-image: url("assets/hero-mobile.webp");
+        background-image: url("assets/design/sections/hero-mobile.webp");
         background-size: cover;
+        background-position: center -45px;
     }
 
     .hero__shadow {
@@ -1150,12 +1208,12 @@ a {
             linear-gradient(
                 180deg,
                 rgba(18, 73, 96, 0) 50%,
-                rgba(18, 73, 96, 0.49) 74%,
-                var(--bg) 100%
+                rgba(18, 73, 96, 0.49) 73.99%,
+                #d8e7f6 100%
             ),
             linear-gradient(
                 270deg,
-                rgba(17, 27, 45, 0) 27%,
+                rgba(17, 27, 45, 0) 27.29%,
                 rgba(17, 27, 45, 0.8) 100%
             );
     }
@@ -1222,6 +1280,7 @@ a {
     .cta-group {
         gap: 4px;
         max-width: 100%;
+        flex-wrap: wrap;
     }
 
     .btn {
@@ -1244,14 +1303,6 @@ a {
         color: rgba(17, 27, 45, 0.9);
     }
 
-    .btn--ghost.desktop {
-        display: none;
-    }
-
-    .btn--ghost.mobile {
-        display: inline-flex;
-    }
-
     .social {
         gap: 4px;
     }
@@ -1259,6 +1310,54 @@ a {
     .ico-btn {
         width: 56px;
         height: 56px;
+    }
+
+    .telegram-channel {
+        margin-top: -230px;
+        padding: 0 8px;
+    }
+
+    .telegram-card {
+        min-height: 128px;
+        padding: 24px;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .telegram-card__icon {
+        width: 72px;
+        height: 72px;
+        flex-basis: 72px;
+        padding: 12px;
+        border-radius: 20px;
+    }
+
+    .telegram-card__icon svg {
+        width: 48px;
+        height: 48px;
+    }
+
+    .telegram-card__badge {
+        top: -12px;
+        right: -12px;
+        width: 32px;
+        height: 32px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .telegram-card__copy {
+        gap: 6px;
+    }
+
+    .telegram-card__title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .telegram-card__text {
+        font-size: 16px;
+        line-height: 24px;
     }
 
     .video-strip {
@@ -1425,32 +1524,61 @@ a {
         line-height: var(--steps-handle-size);
     }
 
-    .contact {
-        height: 520px;
+    .gift-certificate {
+        height: 640px;
         margin: 0 8px;
-        padding: 32px 24px;
+        padding: 40px 24px;
         border-radius: 80px;
-        align-items: flex-start;
+        background-image: url("assets/design/sections/gift_mobile.webp");
         background-position: center bottom;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .gift-certificate__copy {
+        width: 100%;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .gift-certificate__title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .gift-certificate__lead {
+        width: 100%;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .contact {
+        height: 640px;
+        margin: 0 8px;
+        padding: 40px 0 0;
+        border-radius: 80px;
+        background-image: url("assets/design/sections/bitalent-kid_mobile.webp");
+        align-items: flex-start;
+        justify-content: center;
+        background-position: center bottom;
+        text-align: center;
     }
 
     .contact__copy {
-        max-width: 250px;
+        align-items: center;
+        padding: 0 24px;
+        gap: 0;
     }
 
     .contact__logo {
-        height: 32px;
+        margin-bottom: 16px;
     }
 
     .contact__lead {
-        width: auto;
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    .contact__kid {
-        right: -32px;
-        height: 360px;
+        width: 100%;
+        font-size: 20px;
+        line-height: 32px;
     }
 
     .section--map {
@@ -1486,15 +1614,17 @@ a {
     .boat-card--wide {
         flex: none;
         width: 100%;
-        height: 260px;
+        aspect-ratio: 1344 / 914;
+        height: auto;
         margin: 0;
         padding: 40px;
         border-radius: 80px;
     }
 
     .boat-card--wide {
-        height: 360px;
-        min-height: 360px;
+        background-image: url("assets/content/boats/super-air-nautique_mobile.webp");
+        aspect-ratio: 768 / 720;
+        min-height: 0;
     }
 
     .boat-card__copy {
@@ -1511,52 +1641,6 @@ a {
     .boat-card__title {
         font-size: 20px;
         line-height: 32px;
-    }
-
-    .boat-card__img {
-        position: absolute;
-        left: 28px;
-        right: 28px;
-        bottom: 20px;
-        width: calc(100% - 56px);
-        max-height: 125px;
-        object-fit: contain;
-        margin: 0;
-    }
-
-    .boat-card__img--wide {
-        left: 0;
-        right: auto;
-        bottom: 40px;
-        width: 150%;
-        max-height: 256px;
-    }
-
-    .waves {
-        height: 118px;
-    }
-
-    .waves--back {
-        bottom: 28px;
-    }
-
-    .waves--front {
-        bottom: -44px;
-    }
-
-    .boat-card--wide .waves--wide {
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 142px;
-    }
-
-    .boat-card--wide .waves--wide.waves--back {
-        bottom: 0;
-    }
-
-    .boat-card--wide .waves--wide.waves--front {
-        bottom: 0;
     }
 
     .faq {
@@ -1592,13 +1676,16 @@ a {
 
     .gallery-section {
         --gallery-track-gap: 16px;
+        --gallery-tile: 200px;
+        --gallery-wide: 300px;
         padding: 0;
     }
 
-    .gallery-grid {
-        --gallery-tile: 448px;
-        --gallery-wide: 672px;
+    .gallery-carousel {
         gap: 16px;
+    }
+
+    .gallery-track {
         padding: 0 30px;
     }
 
@@ -1618,15 +1705,33 @@ a {
     }
 
     .footer__row {
-        height: auto;
         flex-direction: column;
         justify-content: center;
         gap: 16px;
+        text-align: center;
+    }
+
+    .footer__row p {
+        margin: 0;
     }
 
     .footer__links {
-        gap: 24px;
-        opacity: 0.4;
+        gap: 16px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__payments img {
+        width: 44px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 429px) {
+    .cta-group .btn--ghost {
+        gap: 0;
+        font-size: 0;
+        line-height: 0;
     }
 }
 
@@ -1656,7 +1761,7 @@ a {
         width: 720px;
     }
 
-    .gallery-grid {
+    .gallery-section {
         --gallery-tile: 403.2px;
         --gallery-wide: 604.8px;
     }
