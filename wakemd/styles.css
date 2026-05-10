@@ -1914,7 +1914,7 @@ a {
     }
 
     .gallery-carousel {
-        gap: 16px;
+        gap: 8px;
     }
 
     .gallery-track {
@@ -1922,7 +1922,7 @@ a {
     }
 
     .gallery-row {
-        gap: 16px;
+        gap: 8px;
     }
 
     .gallery-img {
