@@ -746,11 +746,11 @@
                 <!-- GIFT CERTIFICATE -->
                 <section class="gift-certificate">
                     <div class="gift-certificate__copy">
-                        <h2 class="gift-certificate__title">
+                        <h2 class="section__title">
                             Подарочный<br /><span class="emoji">🎉</span
                             >сертификат
                         </h2>
-                        <p class="gift-certificate__lead">
+                        <p class="section__lead">
                             Стоимость рассчитывается по количеству сетов. Вы
                             можете купить сертификат на любую сумму.
                         </p>
@@ -765,7 +765,7 @@
                             src="assets/design/brand/bitalent-logo.webp"
                             alt="Bitalent"
                         />
-                        <h2 class="contact__title">
+                        <h2 class="section__title contact__title">
                             Постоянно<br />на <span class="emoji">☎</span> связи
                         </h2>
                         <p class="contact__lead">
@@ -1236,7 +1236,7 @@
 
                 if (!telegramCard) return;
 
-                const minScrollY = 24;
+                const minScrollY = 224;
                 let hasScrolledEnough = window.scrollY >= minScrollY;
                 let cardIsVisible = false;
                 let observer = null;
@@ -1349,7 +1349,7 @@
 
                 const videoCarousel = new Swiper(".video-carousel", {
                     slidesPerView: "auto",
-                    spaceBetween: 16,
+                    spaceBetween: 8,
                     centeredSlides: false,
                     grabCursor: true,
                     watchSlidesProgress: true,
@@ -1363,10 +1363,10 @@
                     },
                     breakpoints: {
                         768: {
-                            spaceBetween: 16,
+                            spaceBetween: 8,
                         },
                         1200: {
-                            spaceBetween: 20,
+                            spaceBetween: 8,
                         },
                     },
                     on: {
@@ -1468,6 +1468,107 @@
                     });
                 }
             }
+
+            (() => {
+                const gallery = document.querySelector(".gallery-carousel");
+                const galleryTracks = [
+                    ...document.querySelectorAll(".gallery-track"),
+                ];
+
+                if (!gallery || !galleryTracks.length) return;
+
+                const offsets = new WeakMap();
+                let activeTrack = null;
+                let activeRow = null;
+                let startX = 0;
+                let startOffset = 0;
+
+                const getLoopWidth = (row) => {
+                    const gap = parseFloat(
+                        getComputedStyle(row).columnGap || "0",
+                    );
+
+                    return row.scrollWidth / 2 + gap / 2;
+                };
+
+                const normalizeOffset = (row, offset) => {
+                    const loopWidth = getLoopWidth(row);
+
+                    if (!loopWidth) return offset;
+
+                    const halfLoopWidth = loopWidth / 2;
+
+                    return (
+                        ((((offset + halfLoopWidth) % loopWidth) +
+                            loopWidth) %
+                            loopWidth) -
+                        halfLoopWidth
+                    );
+                };
+
+                const setRowOffset = (row, offset) => {
+                    const normalizedOffset = normalizeOffset(row, offset);
+
+                    offsets.set(row, normalizedOffset);
+                    row.style.setProperty(
+                        "--gallery-drag-offset",
+                        `${normalizedOffset}px`,
+                    );
+                };
+
+                galleryTracks.forEach((track) => {
+                    const row = track.querySelector(".gallery-row");
+
+                    if (!row) return;
+
+                    offsets.set(row, 0);
+                    row.style.setProperty("--gallery-drag-offset", "0px");
+
+                    track.addEventListener("dragstart", (event) => {
+                        event.preventDefault();
+                    });
+
+                    track.addEventListener("pointerdown", (event) => {
+                        if (
+                            event.pointerType === "mouse" &&
+                            event.button !== 0
+                        ) {
+                            return;
+                        }
+
+                        activeTrack = track;
+                        activeRow = row;
+                        startX = event.clientX;
+                        startOffset = offsets.get(row) || 0;
+                        track.classList.add("is-dragging");
+                        track.setPointerCapture(event.pointerId);
+                    });
+
+                    track.addEventListener("pointermove", (event) => {
+                        if (activeTrack !== track || !activeRow) return;
+
+                        const deltaX = event.clientX - startX;
+
+                        setRowOffset(activeRow, startOffset + deltaX);
+                    });
+
+                    const stopTrackDrag = (event) => {
+                        if (activeTrack !== track) return;
+
+                        track.classList.remove("is-dragging");
+
+                        if (track.hasPointerCapture(event.pointerId)) {
+                            track.releasePointerCapture(event.pointerId);
+                        }
+
+                        activeTrack = null;
+                        activeRow = null;
+                    };
+
+                    track.addEventListener("pointerup", stopTrackDrag);
+                    track.addEventListener("pointercancel", stopTrackDrag);
+                });
+            })();
 
             document.querySelectorAll(".big-video").forEach((section) => {
                 const video = section.querySelector("video");
