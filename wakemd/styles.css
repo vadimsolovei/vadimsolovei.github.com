@@ -13,6 +13,8 @@
     --night-soft: rgba(17, 27, 45, 0.9);
     --yellow: #ffc700;
     --white: #ffffff;
+    --browser-top-color: #000000;
+    --browser-bottom-color: #000000;
     --radius-xl: 80px;
     --radius-lg: 60px;
     --radius-md: 40px;
@@ -27,11 +29,37 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background: var(--bg);
+    background: var(--browser-bottom-color);
     font-family: "Montserrat Alternates", "Montserrat", system-ui, sans-serif;
     color: var(--ink);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    min-height: 100vh;
+}
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+body::before {
+    top: 0;
+    height: env(safe-area-inset-top, 0px);
+    background: var(--browser-top-color);
+}
+
+body::after {
+    bottom: 0;
+    height: env(safe-area-inset-bottom, 0px);
+    background: var(--browser-bottom-color);
 }
 
 img {
@@ -1752,6 +1780,7 @@ a {
     .gift-certificate__title {
         font-size: 40px;
         line-height: 40px;
+        text-wrap: nowrap;
     }
 
     .gift-certificate__lead {
